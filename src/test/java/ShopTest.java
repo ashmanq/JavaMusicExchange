@@ -43,4 +43,11 @@ public class ShopTest {
         shop.removeItem(instrument1);
         assertEquals(1, shop.noOfItems());
     }
+
+    @Test
+    public void canCalcTotalPotentialProfit() {
+        shop.addItem(instrument1);
+        shop.addItem(instrument2);
+        assertEquals(3100.00, shop.calcTotalPotentialProfit(), 0.01);
+    }
 }

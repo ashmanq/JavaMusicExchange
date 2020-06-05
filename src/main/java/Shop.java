@@ -27,4 +27,13 @@ public class Shop {
     public int noOfItems() {
         return this.shopItems.size();
     }
+
+    public double calcTotalPotentialProfit() {
+
+        double totalProfit = 0;
+        for (ISell item : this.shopItems) {
+            totalProfit += item.calculateMarkup();
+        }
+        return totalProfit;
+    }
 }
