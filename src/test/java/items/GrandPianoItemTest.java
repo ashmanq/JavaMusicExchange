@@ -3,20 +3,17 @@ package items;
 import instruments.Piano;
 import org.junit.Before;
 import org.junit.Test;
-import sun.awt.CGraphicsConfig;
 
 import static org.junit.Assert.assertEquals;
 
 public class GrandPianoItemTest {
 
     private GrandPianoItem grandPianoItem;
-    private Piano piano;
 
     @Before()
     public void before() {
-        piano = new Piano("Wood", "Black", 88,"Grand");
         String description = "A Steinway Grand Piano.";
-        grandPianoItem = new GrandPianoItem(description, 20000.00, 40000.00, piano);
+        grandPianoItem = new GrandPianoItem(description, 20000.00, 40000.00);
     }
 
     @Test
@@ -36,7 +33,7 @@ public class GrandPianoItemTest {
 
     @Test
     public void hasInstrument() {
-        assertEquals(piano, grandPianoItem.getInstrument());
+        assertEquals("Grand", grandPianoItem.getPiano().getPianoSize());
     }
 
     @Test

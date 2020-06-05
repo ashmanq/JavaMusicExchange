@@ -1,17 +1,18 @@
 package items;
 
 import instruments.Instrument;
+import instruments.Piano;
 
 public class GrandPianoItem extends Items{
 
-    Instrument instrument;
+    Piano piano;
 
-    public GrandPianoItem(String description, double costPrice, double salePrice, Instrument instrument) {
+    public GrandPianoItem(String description, double costPrice, double salePrice) {
         super(description, costPrice, salePrice);
-        this.instrument = instrument;
+        this.piano =  new Piano("Wood", "Black", 88,"Grand");;
     }
 
-    public Instrument getInstrument() {
-        return instrument;
+    public Piano getPiano() {
+        return piano;
     }
 }

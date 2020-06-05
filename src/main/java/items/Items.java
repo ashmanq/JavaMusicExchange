@@ -1,7 +1,6 @@
 package items;
 
 import behaviours.ISell;
-import instruments.Instrument;
 
 public abstract class Items implements ISell {
     String description;
