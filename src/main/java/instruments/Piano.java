@@ -2,7 +2,7 @@ package instruments;
 
 import behaviours.IPlay;
 
-public class Piano extends Instrument implements IPlay {
+public class Piano extends Instrument {
 
     private int noOfKeys;
     private String pianoSize;

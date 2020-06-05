@@ -2,7 +2,7 @@ package instruments;
 
 import behaviours.IPlay;
 
-public class Trumpet extends Instrument implements IPlay {
+public class Trumpet extends Instrument {
 
     int noOfValves;
 

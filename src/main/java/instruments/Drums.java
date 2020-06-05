@@ -1,8 +1,7 @@
 package instruments;
 
-import behaviours.IPlay;
 
-public class Drums extends Instrument implements IPlay {
+public class Drums extends Instrument {
 
     private int noOfPieces;
     private int noOfSnares;

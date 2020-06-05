@@ -2,7 +2,7 @@ package instruments;
 
 import behaviours.IPlay;
 
-public class Flute extends Instrument implements IPlay {
+public class Flute extends Instrument {
 
     String fluteType;
 
